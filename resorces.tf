@@ -1,4 +1,9 @@
-resource "aws_instance" "ec2" {
-  ami           = "ami-0d26eb3972b7f8c96"
-  instance_type = var.instancetype
+/*resource "aws_eip" "vpc1" {
+  vpc = true
+}*/
+
+
+resource "aws_instance" "firstaws"{
+  ami="ami-0194c3e07668a7e36"
+  instance_type= "eu_west_2"
 }
